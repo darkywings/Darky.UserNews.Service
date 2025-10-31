@@ -33,11 +33,4 @@ class JwtKey:
                            algorithms=["HS256"])]
 
 if __name__ == "__main__":
-    jwtHandler = JwtKey()
-    data = {
-            "login": "test",
-            "secret_key": "1234567890123456"
-        }
-    jwtKey = jwtHandler.generate_jwt(data)
-    print(jwtKey)
-    print(jwtHandler.get_decoded_jwt(jwtKey))
+    ...
